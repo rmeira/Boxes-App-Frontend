@@ -72,7 +72,7 @@ export default class Box extends Component {
           {this.state.box.files &&
             this.state.box.files.map(file => (
               <li key={file._id}>
-                <a className="fileinfo" href="" target="_blank">
+                <a className="fileinfo" href={file.url} target="_blank">
                   <MdInsertDriveFile size={24} color="#DDD" />
                   <strong>{file.title}</strong>
                 </a>
